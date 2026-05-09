@@ -6,5 +6,4 @@ enableXsrfProtection = false
 maxUploadSize = 10
 
 [browser]
-serverAddress = "localhost"
 gatherUsageStats = false
