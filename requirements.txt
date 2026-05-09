@@ -1,4 +1,23 @@
-openai>=1.0.0      # 调用大模型API的基础库
-python-dotenv      # 用于管理API Key等环境变量
-streamlit          # 用于快速搭建前端交互界面
-pydantic           # 用于规范模型输出的JSON格式
+# 核心依赖
+streamlit>=1.30.0
+requests>=2.31.0
+Pillow>=10.1.0
+python-dotenv>=1.0.0
+
+# OCR处理
+pytesseract>=0.3.10
+opencv-python-headless>=4.8.1
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 工具库
+uuid>=1.30
+python-multipart>=0.0.6
+
+# 可选：如果要支持更多OCR语言
+# pytesseract需要系统安装tesseract-ocr
+# Ubuntu/Debian: apt-get install tesseract-ocr tesseract-ocr-chi-sim
+# macOS: brew install tesseract tesseract-lang
+# Windows: 安装Tesseract-OCR并添加到PATH
